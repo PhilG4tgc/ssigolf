@@ -1,1662 +1,136 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
+<html>
 
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
-<meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="simulation_analysis_files/filelist.xml">
-<link rel=Edit-Time-Data href="simulation_analysis_files/editdata.mso">
-<!--[if !mso]>
-<style>
-v\:* {behavior:url(#default#VML);}
-o\:* {behavior:url(#default#VML);}
-w\:* {behavior:url(#default#VML);}
-.shape {behavior:url(#default#VML);}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:DocumentProperties>
-  <o:Author>Phil Goddard</o:Author>
-  <o:LastAuthor>Phil Goddard</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>1</o:TotalTime>
-  <o:Created>2026-07-07T21:38:00Z</o:Created>
-  <o:LastSaved>2026-07-07T21:38:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>2419</o:Words>
-  <o:Characters>13792</o:Characters>
-  <o:Lines>114</o:Lines>
-  <o:Paragraphs>32</o:Paragraphs>
-  <o:CharactersWithSpaces>16179</o:CharactersWithSpaces>
-  <o:Version>16.00</o:Version>
- </o:DocumentProperties>
- <o:OfficeDocumentSettings>
-  <o:AllowPNG/>
- </o:OfficeDocumentSettings>
-</xml><![endif]-->
-<link rel=themeData href="simulation_analysis_files/themedata.thmx">
-<link rel=colorSchemeMapping
-href="simulation_analysis_files/colorschememapping.xml">
-<!--[if gte mso 9]><xml>
- <w:WordDocument>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
-  <w:TrackMoves>false</w:TrackMoves>
-  <w:TrackFormatting/>
-  <w:PunctuationKerning/>
-  <w:ValidateAgainstSchemas/>
-  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
-  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
-  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
-  <w:DoNotPromoteQF/>
-  <w:LidThemeOther>EN-CA</w:LidThemeOther>
-  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
-  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
-  <w:Compatibility>
-   <w:BreakWrappedTables/>
-   <w:SnapToGridInCell/>
-   <w:WrapTextWithPunct/>
-   <w:UseAsianBreakRules/>
-   <w:DontGrowAutofit/>
-   <w:SplitPgBreakAndParaMark/>
-   <w:EnableOpenTypeKerning/>
-   <w:DontFlipMirrorIndents/>
-   <w:OverrideTableStyleHps/>
-  </w:Compatibility>
-  <m:mathPr>
-   <m:mathFont m:val="Cambria Math"/>
-   <m:brkBin m:val="before"/>
-   <m:brkBinSub m:val="&#45;-"/>
-   <m:smallFrac m:val="off"/>
-   <m:dispDef/>
-   <m:lMargin m:val="0"/>
-   <m:rMargin m:val="0"/>
-   <m:defJc m:val="centerGroup"/>
-   <m:wrapIndent m:val="1440"/>
-   <m:intLim m:val="subSup"/>
-   <m:naryLim m:val="undOvr"/>
-  </m:mathPr></w:WordDocument>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
-  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
-  LatentStyleCount="376">
-  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
-  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 9"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 1"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 2"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 3"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 4"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 5"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 6"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 7"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 8"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="header"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footer"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index heading"/>
-  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of figures"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope return"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="line number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="page number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of authorities"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="macro"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="toa heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 5"/>
-  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Closing"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Signature"/>
-  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Message Header"/>
-  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Salutation"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Date"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Note Heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Block Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Hyperlink"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="FollowedHyperlink"/>
-  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
-  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Document Map"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Plain Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="E-mail Signature"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Top of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Bottom of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal (Web)"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Acronym"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Cite"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Code"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Definition"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Keyboard"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Preformatted"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Sample"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Typewriter"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Variable"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Table"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation subject"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="No List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Contemporary"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Elegant"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Professional"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Balloon Text"/>
-  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Theme"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
-  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
-  <w:LsdException Locked="false" Priority="34" QFormat="true"
-   Name="List Paragraph"/>
-  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
-  <w:LsdException Locked="false" Priority="30" QFormat="true"
-   Name="Intense Quote"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="19" QFormat="true"
-   Name="Subtle Emphasis"/>
-  <w:LsdException Locked="false" Priority="21" QFormat="true"
-   Name="Intense Emphasis"/>
-  <w:LsdException Locked="false" Priority="31" QFormat="true"
-   Name="Subtle Reference"/>
-  <w:LsdException Locked="false" Priority="32" QFormat="true"
-   Name="Intense Reference"/>
-  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
-  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Bibliography"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
-  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
-  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
-  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
-  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
-  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
-  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
-  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Mention"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Smart Hyperlink"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Hashtag"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Unresolved Mention"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Smart Link"/>
- </w:LatentStyles>
-</xml><![endif]-->
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
 <style>
 <!--
  /* Font Definitions */
  @font-face
 	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
 @font-face
 	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
 @font-face
 	{font-family:"Calibri Light";
-	panose-1:2 15 3 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin-top:0cm;
+	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:8.0pt;
 	margin-left:0cm;
 	line-height:107%;
-	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
+	font-family:"Calibri",sans-serif;}
 h1
-	{mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 1 Char";
-	mso-style-next:Normal;
+	{mso-style-link:"Heading 1 Char";
 	margin-top:18.0pt;
 	margin-right:0cm;
 	margin-bottom:4.0pt;
 	margin-left:0cm;
 	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
-	mso-outline-level:1;
 	font-size:20.0pt;
 	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
 	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
 	font-weight:normal;}
 h2
-	{mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 2 Char";
-	mso-style-next:Normal;
+	{mso-style-link:"Heading 2 Char";
 	margin-top:8.0pt;
 	margin-right:0cm;
 	margin-bottom:4.0pt;
 	margin-left:0cm;
 	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
-	mso-outline-level:2;
 	font-size:16.0pt;
 	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
 	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
 	font-weight:normal;}
 h3
-	{mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 3 Char";
-	mso-style-next:Normal;
+	{mso-style-link:"Heading 3 Char";
 	margin-top:8.0pt;
 	margin-right:0cm;
 	margin-bottom:4.0pt;
 	margin-left:0cm;
 	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
-	mso-outline-level:3;
 	font-size:14.0pt;
 	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
 	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
 	font-weight:normal;}
-h4
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 4 Char";
-	mso-style-next:Normal;
-	margin-top:4.0pt;
-	margin-right:0cm;
-	margin-bottom:2.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:4;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;
-	font-style:italic;}
-h5
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 5 Char";
-	mso-style-next:Normal;
-	margin-top:4.0pt;
-	margin-right:0cm;
-	margin-bottom:2.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:5;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;}
-h6
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 6 Char";
-	mso-style-next:Normal;
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:6;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;
-	font-style:italic;}
-p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 7 Char";
-	mso-style-next:Normal;
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:7;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 8 Char";
-	mso-style-next:Normal;
-	margin:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:8;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-style:italic;}
-p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Heading 9 Char";
-	mso-style-next:Normal;
-	margin:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:9;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Title Char";
-	mso-style-next:Normal;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Title Char";
-	mso-style-next:Normal;
-	mso-style-type:export-only;
-	margin:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Title Char";
-	mso-style-next:Normal;
-	mso-style-type:export-only;
-	margin:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Title Char";
-	mso-style-next:Normal;
-	mso-style-type:export-only;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
-	{mso-style-priority:11;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Subtitle Char";
-	mso-style-next:Normal;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:14.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	letter-spacing:.75pt;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
 a:link, span.MsoHyperlink
-	{mso-style-priority:99;
-	color:#0563C1;
-	mso-themecolor:hyperlink;
-	text-decoration:underline;
-	text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:#954F72;
-	mso-themecolor:followedhyperlink;
-	text-decoration:underline;
-	text-underline:single;}
+	{color:#0563C1;
+	text-decoration:underline;}
 p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	margin-top:0cm;
+	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:8.0pt;
 	margin-left:36.0pt;
-	mso-add-space:auto;
 	line-height:107%;
-	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
+	font-family:"Calibri",sans-serif;}
 p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-type:export-only;
-	margin-top:0cm;
+	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
 	margin-left:36.0pt;
-	mso-add-space:auto;
 	line-height:107%;
-	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
+	font-family:"Calibri",sans-serif;}
 p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-type:export-only;
-	margin-top:0cm;
+	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:0cm;
 	margin-left:36.0pt;
-	mso-add-space:auto;
 	line-height:107%;
-	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
+	font-family:"Calibri",sans-serif;}
 p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-type:export-only;
-	margin-top:0cm;
+	{margin-top:0cm;
 	margin-right:0cm;
 	margin-bottom:8.0pt;
 	margin-left:36.0pt;
-	mso-add-space:auto;
 	line-height:107%;
-	mso-pagination:widow-orphan;
 	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoQuote, li.MsoQuote, div.MsoQuote
-	{mso-style-priority:29;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Quote Char";
-	mso-style-next:Normal;
-	margin-top:8.0pt;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	text-align:center;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	color:#404040;
-	mso-themecolor:text1;
-	mso-themetint:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-style:italic;}
-p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
-	{mso-style-priority:30;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Intense Quote Char";
-	mso-style-next:Normal;
-	margin-top:18.0pt;
-	margin-right:43.2pt;
-	margin-bottom:18.0pt;
-	margin-left:43.2pt;
-	text-align:center;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	border:none;
-	mso-border-top-alt:solid #2F5496 .5pt;
-	mso-border-top-themecolor:accent1;
-	mso-border-top-themeshade:191;
-	mso-border-bottom-alt:solid #2F5496 .5pt;
-	mso-border-bottom-themecolor:accent1;
-	mso-border-bottom-themeshade:191;
-	padding:0cm;
-	mso-padding-alt:10.0pt 0cm 10.0pt 0cm;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-style:italic;}
-span.MsoIntenseEmphasis
-	{mso-style-priority:21;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	font-style:italic;}
-span.MsoIntenseReference
-	{mso-style-priority:32;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	font-variant:small-caps;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	letter-spacing:.25pt;
-	font-weight:bold;}
+	font-family:"Calibri",sans-serif;}
 span.Heading1Char
 	{mso-style-name:"Heading 1 Char";
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
 	mso-style-link:"Heading 1";
-	mso-ansi-font-size:20.0pt;
-	mso-bidi-font-size:20.0pt;
 	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
+	color:#2F5496;}
 span.Heading2Char
 	{mso-style-name:"Heading 2 Char";
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
 	mso-style-link:"Heading 2";
-	mso-ansi-font-size:16.0pt;
-	mso-bidi-font-size:16.0pt;
 	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
+	color:#2F5496;}
 span.Heading3Char
 	{mso-style-name:"Heading 3 Char";
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
 	mso-style-link:"Heading 3";
-	mso-ansi-font-size:14.0pt;
-	mso-bidi-font-size:14.0pt;
 	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Heading4Char
-	{mso-style-name:"Heading 4 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 4";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	font-style:italic;}
-span.Heading5Char
-	{mso-style-name:"Heading 5 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 5";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Heading6Char
-	{mso-style-name:"Heading 6 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 6";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	font-style:italic;}
-span.Heading7Char
-	{mso-style-name:"Heading 7 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 7";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;}
-span.Heading8Char
-	{mso-style-name:"Heading 8 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 8";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;
-	font-style:italic;}
-span.Heading9Char
-	{mso-style-name:"Heading 9 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Heading 9";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;}
-span.TitleChar
-	{mso-style-name:"Title Char";
-	mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Title;
-	mso-ansi-font-size:28.0pt;
-	mso-bidi-font-size:28.0pt;
-	font-family:"Calibri Light",sans-serif;
-	mso-ascii-font-family:"Calibri Light";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Calibri Light";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;}
-span.SubtitleChar
-	{mso-style-name:"Subtitle Char";
-	mso-style-priority:11;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Subtitle;
-	mso-ansi-font-size:14.0pt;
-	mso-bidi-font-size:14.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	letter-spacing:.75pt;}
-span.QuoteChar
-	{mso-style-name:"Quote Char";
-	mso-style-priority:29;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Quote;
-	color:#404040;
-	mso-themecolor:text1;
-	mso-themetint:191;
-	font-style:italic;}
-span.IntenseQuoteChar
-	{mso-style-name:"Intense Quote Char";
-	mso-style-priority:30;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Intense Quote";
-	color:#2F5496;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	font-style:italic;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
+	color:#2F5496;}
 .MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-fareast-language:EN-US;}
+	{font-family:"Calibri",sans-serif;}
 .MsoPapDefault
-	{mso-style-type:export-only;
-	margin-bottom:8.0pt;
+	{margin-bottom:8.0pt;
 	line-height:107%;}
 @page WordSection1
 	{size:612.0pt 792.0pt;
-	margin:72.0pt 72.0pt 72.0pt 72.0pt;
-	mso-header-margin:35.4pt;
-	mso-footer-margin:35.4pt;
-	mso-paper-source:0;}
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
 div.WordSection1
 	{page:WordSection1;}
  /* List Definitions */
- @list l0
-	{mso-list-id:863635511;
-	mso-list-type:hybrid;
-	mso-list-template-ids:-1426552610 269025295 269025305 269025307 269025295 269025305 269025307 269025295 269025305 269025307;}
-@list l0:level1
-	{mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level2
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level3
-	{mso-level-number-format:roman-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:right;
-	text-indent:-9.0pt;}
-@list l0:level4
-	{mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level5
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level6
-	{mso-level-number-format:roman-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:right;
-	text-indent:-9.0pt;}
-@list l0:level7
-	{mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level8
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level9
-	{mso-level-number-format:roman-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:right;
-	text-indent:-9.0pt;}
-ol
+ ol
 	{margin-bottom:0cm;}
 ul
 	{margin-bottom:0cm;}
 -->
 </style>
-<!--[if gte mso 10]>
-<style>
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:"Table Normal";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-parent:"";
-	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
-	mso-para-margin-top:0cm;
-	mso-para-margin-right:0cm;
-	mso-para-margin-bottom:8.0pt;
-	mso-para-margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-table.MsoTableGrid
-	{mso-style-name:"Table Grid";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-priority:39;
-	mso-style-unhide:no;
-	border:solid windowtext 1.0pt;
-	mso-border-alt:solid windowtext .5pt;
-	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
-	mso-border-insideh:.5pt solid windowtext;
-	mso-border-insidev:.5pt solid windowtext;
-	mso-para-margin:0cm;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <o:shapelayout v:ext="edit">
-  <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><![endif]-->
+
 </head>
 
-<body lang=EN-CA link="#0563C1" vlink="#954F72" style='tab-interval:36.0pt;
-word-wrap:break-word'>
+<body lang=EN-CA link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
 
 <div class=WordSection1>
 
@@ -1665,174 +139,130 @@ Chances of Winning a Match?</h1>
 
 <p class=MsoNormal>One of the important features of golf is its use of a
 handicapping system, enabling players of different skill levels to compete
-against each other, nominally on a level playing field.<span
-style='mso-spacerun:yes'>  </span>Our handicap is the core indictor by which
-our golfing ability is measured, and &quot;What do you play off?&quot; is often
-one of the first questions asked when golfers first begin playing against each
-other.</p>
+against each other, nominally on a level playing field.Â  Our handicap is the
+core indictor by which our golfing ability is measured, and &quot;What do you
+play off?&quot; is often one of the first questions asked when golfers first
+begin playing against each other.</p>
 
 <p class=MsoNormal>Fortunately, all members of the Salt Spring Golf Club have
 access to <a href="https://www.golfcanada.ca/">the Golf Canada Scoring</a>
-portal, where hole scores can (and should) be entered after every round played.<span
-style='mso-spacerun:yes'>  </span>The portal contains a wealth of information
-on the <a href="https://www.golfcanada.ca/handicapping/">World Golf Handicap
-System</a>, including how your entered scores get combined to calculate your <i>scoring
+portal, where hole scores can (and should) be entered after every round played.Â 
+The portal contains a wealth of information on the <a
+href="https://www.golfcanada.ca/handicapping/">World Golf Handicap System</a>,
+including how your entered scores get combined to calculate your <i>scoring
 index</i>, and how that is used to calculate your handicap on any course world
 wide, including when you play competitively on our course.</p>
 
 <p class=MsoNormal>There are 4 competitive formats that we commonly play: </p>
 
-<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
-style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
-style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>gross stroke play</p>
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>gross
+stroke play</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
-style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
-style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>net stroke play</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>net
+stroke play</p>
 
-<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
-style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
-style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>gross match play</p>
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>gross
+match play</p>
 
-<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt;mso-list:l0 level1 lfo1'><![if !supportLists]><span
-style='mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
-style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>net match play.</p>
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>net
+match play.</p>
 
 <p class=MsoNormal>Handicap comes into play for <i>net</i> formats (where your
 handicap is deducted from your total score to give a net-score,) but not <i>gross</i>
-formats (where your handicap is not deducted from your total score.)<span
-style='mso-spacerun:yes'>  </span>In stroke play, your total number of strokes
-taken over the full 18 holes is considered; while in match play, holes are won
-on a hole-by-hole basis, and the player with the most holes won wins the
-overall match.</p>
+formats (where your handicap is not deducted from your total score.)Â  In stroke
+play, your total number of strokes taken over the full 18 holes is considered;
+while in match play, holes are won on a hole-by-hole basis, and the player with
+the most holes won wins the overall match.</p>
 
-<p class=MsoNormal>Colloquially low-handicappers often muse – some might say
+<p class=MsoNormal>Colloquially low-handicappers often muse â€“ some might say
 complain -- that it's not worth their while playing in <i>net</i> competitions
-because high-handicappers always win.<span style='mso-spacerun:yes'> 
-</span>Conversely, and perhaps more understandably, high-handicappers are
-reluctant to enter <i>gross</i> competitions because they are most likely going
-to be won by a low-handicapper.</p>
+because high-handicappers always win.Â  Conversely, and perhaps more understandably,
+high-handicappers are reluctant to enter <i>gross</i> competitions because they
+are most likely going to be won by a low-handicapper.</p>
 
-<p class=MsoNormal>But does the data support these commonly held beliefs?<span
-style='mso-spacerun:yes'>  </span>If the handicapping system is working to its
-ideal, then for <i>net</i> competitions, where the playing field is levelled by
-the use of handicaps, every golfer should have an equal chance of winning.</p>
+<p class=MsoNormal>But does the data support these commonly held beliefs?Â  If
+the handicapping system is working to its ideal, then for <i>net</i>
+competitions, where the playing field is levelled by the use of handicaps,
+every golfer should have an equal chance of winning.</p>
 
 <p class=MsoNormal>In this article, data from rounds played on our course are
-used to simulate all four of the competition types above.<span
-style='mso-spacerun:yes'>  </span>From these simulations conclusions are drawn
-regarding the effectiveness of the handicapping system as it applies to our
-course.</p>
+used to simulate all four of the competition types above.Â  From these
+simulations conclusions are drawn regarding the effectiveness of the
+handicapping system as it applies to our course.</p>
 
 <h2>Methodology</h2>
 
 <p class=MsoNormal>The analysis performed here uses actual hole scores
 submitted by members through the Golf Canada score entry portal for 2021 to
-2025.<span style='mso-spacerun:yes'>  </span>If you entered either a 9-hole or
-18-hole score during that time period then it is used as part of this analysis
-– with a minor caveat that you must have entered at least ten 9-hole round
-scores.</p>
+2025.Â  If you entered either a 9-hole or 18-hole score during that time period
+then it is used as part of this analysis â€“ with a minor caveat that you must
+have entered at least ten 9-hole round scores.</p>
 
 <p class=MsoNormal>The data is split by the handicap of the player at the
-beginning of their round, into different sets.<span style='mso-spacerun:yes'> 
-</span>One set of data is created for those off <i>scratch</i> (i.e. having a
-handicap of 0,) and another set of data is created for those with a handicap of
-1, and another set for those with a handicap of 2, etc., all the way up to a
-handicap of 34.<span style='mso-spacerun:yes'>  </span>(Currently the analysis
-is only performed for Men playing off the White/Blue tees, and this is the
-range of handicaps that we have at the club.)<span style='mso-spacerun:yes'> 
-</span>Each set contains actual scores for all players with that handicap.<span
-style='mso-spacerun:yes'>  </span>Scores for both the front and back nine are
-used.</p>
+beginning of their round, into different sets.Â  One set of data is created for those
+off <i>scratch</i> (i.e. having a handicap of 0,) and another set of data is
+created for those with a handicap of 1, and another set for those with a
+handicap of 2, etc., all the way up to a handicap of 34.Â  (Currently the
+analysis is only performed for Men playing off the White/Blue tees, and this is
+the range of handicaps that we have at the club.)Â  Each set contains actual scores
+for all players with that handicap.Â  Scores for both the front and back nine
+are used.</p>
 
 <p class=MsoNormal>Effectively each set represents the hole scores of a typical
 player with the given handicap.</p>
 
 <p class=MsoNormal>The image below shows the number of rounds played for
-players in each set.<span style='mso-spacerun:yes'>  </span>For example, there
-have been a little over 1000 rounds played by golfers with a handicap of 13.</p>
+players in each set.Â  For example, there have been a little over 1000 rounds
+played by golfers with a handicap of 13.</p>
 
-<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
- coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
- filled="f" stroked="f">
- <v:stroke joinstyle="miter"/>
- <v:formulas>
-  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-  <v:f eqn="sum @0 1 0"/>
-  <v:f eqn="sum 0 0 @1"/>
-  <v:f eqn="prod @2 1 2"/>
-  <v:f eqn="prod @3 21600 pixelWidth"/>
-  <v:f eqn="prod @3 21600 pixelHeight"/>
-  <v:f eqn="sum @0 0 1"/>
-  <v:f eqn="prod @6 1 2"/>
-  <v:f eqn="prod @7 21600 pixelWidth"/>
-  <v:f eqn="sum @8 21600 0"/>
-  <v:f eqn="prod @7 21600 pixelHeight"/>
-  <v:f eqn="sum @10 21600 0"/>
- </v:formulas>
- <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
- <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="_x0000_i1033" type="#_x0000_t75" style='width:487.5pt;
- height:365.25pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="simulation_analysis_files/image001.emz" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=650 height=487
-src="simulation_analysis_files/image002.png" v:shapes="_x0000_i1033"><![endif]></span><span
-style='mso-bidi-font-weight:bold'><o:p></o:p></span></b></p>
+<p class=MsoNormal align=center style='text-align:center'><b><img border=0
+width=650 height=487 src="simulation_analysis_files/image001.png"></b></p>
 
 <p class=MsoNormal>Not unexpectedly, players with a handicap from 7 to 23 play
 the most rounds, while there are few rounds played by players with very low and
-very high handicaps.<span style='mso-spacerun:yes'>  </span>This means that any
-conclusions drawn from the data are likely to be more accurate for the players
-with handicap of 7 to 23 than for those on the extremes.</p>
+very high handicaps.Â  This means that any conclusions drawn from the data are
+likely to be more accurate for the players with handicap of 7 to 23 than for
+those on the extremes.</p>
 
 <p class=MsoNormal>Using a sampling/bootstrapping technique, each set of data
-is used to simulate players with the given handicap.<span
-style='mso-spacerun:yes'>  </span>For each handicap, 10000 18-hole rounds are
-simulated.<span style='mso-spacerun:yes'>  </span></p>
+is used to simulate players with the given handicap.Â  For each handicap, 10000 18-hole
+rounds are simulated.Â  </p>
 
 <p class=MsoNormal>Using the simulated scores, it is possible to determine the
 win probability of a player with handicap X playing against another player with
-handicap Y.<span style='mso-spacerun:yes'>  </span>This win probability is
-calculated for all four of the common competition formats being considered:
-gross stroke play; net stroke play; gross match play; and net match play.</p>
+handicap Y.Â  This win probability is calculated for all four of the common
+competition formats being considered: gross stroke play; net stroke play; gross
+match play; and net match play.</p>
 
 <p class=MsoNormal>In each of the sections below the win probability is
-displayed using a type of visualization called a <i>heatmap</i>.<span
-style='mso-spacerun:yes'>  </span>The x-axis and y-axis represent player
-handicaps.<span style='mso-spacerun:yes'>  </span>The number in each cell is
-the probability that a player with a given handicap X will win a match against
-another player with handicap Y.<span style='mso-spacerun:yes'>  </span>For
-instance, if a cell contains the number 50 then it means player X has a 50%
-probability of winning a match against player Y.<span
-style='mso-spacerun:yes'>  </span>Similarly, a value of 25 indicates that
-player X has a 25% chance of winning, and a value of 75 says that they have a
-75% chance of winning.<span style='mso-spacerun:yes'>  </span>The background
-color makes it easy to see regions where player X has similar win probabilities
-against other players.</p>
+displayed using a type of visualization called a <i>heatmap</i>.Â  The x-axis
+and y-axis represent player handicaps.Â  The number in each cell is the
+probability that a player with a given handicap X will win a match against
+another player with handicap Y.Â  For instance, if a cell contains the number 50
+then it means player X has a 50% probability of winning a match against player
+Y.Â  Similarly, a value of 25 indicates that player X has a 25% chance of
+winning, and a value of 75 says that they have a 75% chance of winning.Â  The
+background color makes it easy to see regions where player X has similar win
+probabilities against other players.</p>
 
-<p class=MsoNormal>The heatmap can be used in the following way:<span
-style='mso-spacerun:yes'>  </span>Down the left-hand side look for your
-handicap.<span style='mso-spacerun:yes'>  </span>Across the lower edge, look
-for the handicap of your opponent.<span style='mso-spacerun:yes'>  </span>The
-number in the cell where your row intersects your opponent’s column gives your
-win probably against that opponent.<span style='mso-spacerun:yes'>  </span>For
+<p class=MsoNormal>The heatmap can be used in the following way:Â  Down the
+left-hand side look for your handicap.Â  Across the lower edge, look for the
+handicap of your opponent.Â  The number in the cell where your row intersects
+your opponentâ€™s column gives your win probably against that opponent.Â  For
 example, if your handicap is 18, and your opponents handicap is also 18, then
-you have a 50% chance of winning your match.<span style='mso-spacerun:yes'> 
-</span>However, if you are playing a gross stroke play event, and your opponent
-has a handicap of 23 then your probability of winning the match rises to 77%.</p>
+you have a 50% chance of winning your match.Â  However, if you are playing a
+gross stroke play event, and your opponent has a handicap of 23 then your probability
+of winning the match rises to 77%.</p>
 
 <p class=MsoNormal>Since the data is quite noisy - especially for the low and
 high handicappers where there is the least data - a smoothing has been applied so
 that the win probabilities increase/decrease monotonically across the heatmaps.</p>
 
-<h2>Win <span class=GramE>Probability <span style='mso-spacerun:yes'> </span>-</span>
-18 Holes Stroke <span class=GramE>Play <span style='mso-spacerun:yes'> </span>-</span>
-Gross</h2>
+<h2>Win Probability Â - 18 Holes Stroke Play Â - Gross</h2>
 
 <p class=MsoNormal>Assuming an 18-hole stroke play event is being played, and
 handicaps are <i>not</i> being used, then the figure below shows the win
@@ -1840,71 +270,50 @@ probabilities.</p>
 
 <p class=MsoNormal>Since this event type does not use handicaps, it is expected
 that any player with handicap X is expected to win over a player with handicap
-Y when X &lt; Y.<span style='mso-spacerun:yes'>  </span>That is, the player
-with the smaller handicap – the better player – is expected to win.<span
-style='mso-spacerun:yes'>  </span>This is borne out by the numbers to the top
-right being greater than 50, while the numbers to the lower left are less than
-50.</p>
+Y when X &lt; Y.Â  That is, the player with the smaller handicap â€“ the better
+player â€“ is expected to win.Â  This is borne out by the numbers to the top right
+being greater than 50, while the numbers to the lower left are less than 50.</p>
 
 <p class=MsoNormal>As a specific example, a player with a handicap of 0 is
-almost certainly going to win over any player with a handicap of 12 or greater.<span
-style='mso-spacerun:yes'>  </span>And they have a greater than 66% chance of
-beating a player with a handicap as low as 3.</p>
+almost certainly going to win over any player with a handicap of 12 or greater.Â 
+And they have a greater than 66% chance of beating a player with a handicap as
+low as 3.</p>
 
 <p class=MsoNormal>This confirms that in a gross stroke play event players with
-the lowest handicap are most likely to win.<span style='mso-spacerun:yes'> 
-</span>(<span class=GramE>Of course</span> this doesn’t mean that they will
-win, merely that they have a high probability of winning.)</p>
+the lowest handicap are most likely to win.Â  (Of course this doesnâ€™t mean that
+they will win, merely that they have a high probability of winning.)</p>
 
-<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
- o:spid="_x0000_i1032" type="#_x0000_t75" style='width:1009.5pt;height:561.75pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="simulation_analysis_files/image003.emz" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=1346 height=749
-src="simulation_analysis_files/image004.png" v:shapes="Picture_x0020_2"><![endif]></span><span
-style='mso-bidi-font-weight:bold'><o:p></o:p></span></b></p>
+<p class=MsoNormal align=center style='text-align:center'><b><img border=0
+width=1346 height=749 id="Picture 2"
+src="simulation_analysis_files/image002.png"></b></p>
 
-<h2>Win <span class=GramE>Probability <span style='mso-spacerun:yes'> </span>-</span>
-18 Holes Stroke <span class=GramE>Play <span style='mso-spacerun:yes'> </span>-</span>
-Net</h2>
+<h2>Win Probability Â - 18 Holes Stroke Play Â - Net</h2>
 
 <p class=MsoNormal>But what happens in an 18-hole stroke play event when
-handicaps <i>are </i>being used - i.e. <i>net</i> scoring is used.<span
-style='mso-spacerun:yes'>  </span>The win probabilities for this type of event
-are shown below.</p>
+handicaps <i>are </i>being used - i.e. <i>net</i> scoring is used.Â  The win
+probabilities for this type of event are shown below.</p>
 
 <p class=MsoNormal>If the handicap system was perfect then we should expect
-every cell to have the value 50 in it.<span style='mso-spacerun:yes'>  </span>(Or
-given the noise in the data, a value close to 50.) That is, when handicaps are
-considered, every player should have a 50% chance of beating any other player.</p>
+every cell to have the value 50 in it.Â  (Or given the noise in the data, a
+value close to 50.) That is, when handicaps are considered, every player should
+have a 50% chance of beating any other player.</p>
 
-<p class=MsoNormal>That is clearly not the case.<span
-style='mso-spacerun:yes'>  </span>High handicappers are more likely to win a <i>net</i>
-stroke play event than a low handicapper is. <span
-style='mso-spacerun:yes'> </span>Heuristically this can be expected as it is
-easier for a high handicapper to have a great day out and beat their handicap
-by say 10 strokes, than it is for a scratch (or low) handicapper to beat their handicap
-by 10 shots by shooting a 62.</p>
+<p class=MsoNormal>That is clearly not the case.Â  High handicappers are more
+likely to win a <i>net</i> stroke play event than a low handicapper is. Â Heuristically
+this can be expected as it is easier for a high handicapper to have a great day
+out and beat their handicap by say 10 strokes, than it is for a scratch (or
+low) handicapper to beat their handicap by 10 shots by shooting a 62.</p>
 
 <p class=MsoNormal>This data reinforces the perception of low handicappers that
 it is not worth their while entering <i>net</i> events. However, except at the
-extremes, the advantage is small, and a <span class=GramE>recent <i>net</i>
-events</span> at our club has been won by a player with one of the lowest
-handicaps in the field.</p>
+extremes, the advantage is small, and a recent <i>net</i> events at our club has
+been won by a player with one of the lowest handicaps in the field.</p>
 
-<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3"
- o:spid="_x0000_i1031" type="#_x0000_t75" style='width:1009.5pt;height:561.75pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="simulation_analysis_files/image005.emz" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=1346 height=749
-src="simulation_analysis_files/image006.png" v:shapes="Picture_x0020_3"><![endif]></span><span
-style='mso-bidi-font-weight:bold'><o:p></o:p></span></b></p>
+<p class=MsoNormal align=center style='text-align:center'><b><img border=0
+width=1346 height=749 id="Picture 3"
+src="simulation_analysis_files/image003.png"></b></p>
 
-<h2>Win <span class=GramE>Probability <span style='mso-spacerun:yes'> </span>-</span>
-18 Holes Match <span class=GramE>Play<span style='mso-spacerun:yes'>  </span>-</span>
-Gross</h2>
+<h2>Win Probability Â - 18 Holes Match PlayÂ  - Gross</h2>
 
 <p class=MsoNormal>Now let's take a look at match play events. These are scored
 on a hole-by-hole basis, with the winner being the player who wins the most
@@ -1917,230 +326,179 @@ score event -- win probabilities for this type of event are shown below.</p>
 play events. Low handicap players are expected to far out perform high handicap
 players.</p>
 
-<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
- o:spid="_x0000_i1030" type="#_x0000_t75" style='width:14in;height:560.25pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="simulation_analysis_files/image007.emz" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=1344 height=747
-src="simulation_analysis_files/image008.png" v:shapes="Picture_x0020_4"><![endif]></span><span
-style='mso-bidi-font-weight:bold'><o:p></o:p></span></b></p>
+<p class=MsoNormal align=center style='text-align:center'><b><img border=0
+width=1344 height=747 id="Picture 4"
+src="simulation_analysis_files/image004.png"></b></p>
 
-<h2>Win <span class=GramE>Probability<span style='mso-spacerun:yes'>  </span>-</span>
-18 Holes Match <span class=GramE>Play<span style='mso-spacerun:yes'>  </span>-</span>
-Net</h2>
+<h2>Win ProbabilityÂ  - 18 Holes Match PlayÂ  - Net</h2>
 
 <p class=MsoNormal>The final competition type to analyse is <i>net</i> match
-play.<span style='mso-spacerun:yes'>  </span>Since handicaps are used, if the
-handicap system was perfect then all players would be expected to have a 50% probability
-of winning. The heatmap below shows that that is not the case universally,
-however for large regions of handicaps it is the case.</p>
+play.Â  Since handicaps are used, if the handicap system was perfect then all players
+would be expected to have a 50% probability of winning. The heatmap below shows
+that that is not the case universally, however for large regions of handicaps
+it is the case.</p>
 
-<p class=MsoNormal>Very low handicappers appear to be at a disadvantage.<span
-style='mso-spacerun:yes'>  </span>However, mid and high handicappers have a win
-probably near 50% when playing someone within 8 to 9 handicap strokes from
-them. And even when playing someone with a vastly different handicap, most golfers
-have a reasonable chance of winning a <i>net</i> match play event.</p>
+<p class=MsoNormal>Very low handicappers appear to be at a disadvantage.Â  However,
+mid and high handicappers have a win probably near 50% when playing someone
+within 8 to 9 handicap strokes from them. And even when playing someone with a
+vastly different handicap, most golfers have a reasonable chance of winning a <i>net</i>
+match play event.</p>
 
-<p class=MsoNormal align=center style='text-align:center'><b><o:p>&nbsp;</o:p></b></p>
+<p class=MsoNormal align=center style='text-align:center'><b>&nbsp;</b></p>
 
-<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
- o:spid="_x0000_i1029" type="#_x0000_t75" style='width:14in;height:560.25pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="simulation_analysis_files/image009.emz" o:title=""/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=1344 height=747
-src="simulation_analysis_files/image010.png" v:shapes="Picture_x0020_5"><![endif]></span><span
-style='mso-bidi-font-weight:bold'><o:p></o:p></span></b></p>
+<p class=MsoNormal align=center style='text-align:center'><b><img border=0
+width=1344 height=747 id="Picture 5"
+src="simulation_analysis_files/image005.png"></b></p>
 
 <h2>Multi-player Competitions</h2>
 
 <p class=MsoNormal>The above results are all premised on events being
-one-on-one.<span style='mso-spacerun:yes'>  </span>However, since many of our
-trophy events involve multiple players, it is sensible to then ask how does win
-probability change when there are multiple players in a field, with some having
-the same handicap?</p>
+one-on-one.Â  However, since many of our trophy events involve multiple players,
+it is sensible to then ask how does win probability change when there are
+multiple players in a field, with some having the same handicap?</p>
 
 <p class=MsoNormal>The answer depends on how many players there are in the
-field with any given handicap.<span style='mso-spacerun:yes'>  </span>An
-extreme example would be to consider a stroke play event with 100 players in
-the field, where one player has a handicap of X, and the other 99 players have
-a handicap of X+1.<span style='mso-spacerun:yes'>  </span>Since the players all
-have similar handicaps, they will each have approximately the same probability
-of winning.<span style='mso-spacerun:yes'>  </span>However, since there are 99
-players with a handicap of X+1, the probability that a player who has a
-handicap of X+1 winning the event is far higher than the probability of the
-single player with a handicap of X being the winner.</p>
+field with any given handicap.Â  An extreme example would be to consider a
+stroke play event with 100 players in the field, where one player has a
+handicap of X, and the other 99 players have a handicap of X+1.Â  Since the
+players all have similar handicaps, they will each have approximately the same
+probability of winning.Â  However, since there are 99 players with a handicap of
+X+1, the probability that a player who has a handicap of X+1 winning the event
+is far higher than the probability of the single player with a handicap of X
+being the winner.</p>
 
-<p class=MsoNormal>As a more concrete example, consider the 2025 Men’s Club
-Championship.<span style='mso-spacerun:yes'>  </span>Played over 2 days, this
-is a 36-hole stroke play event and in 2025 there were 48 players in the field.<span
-style='mso-spacerun:yes'>  </span>Two events are played simultaneously – there
-is a trophy for lowest gross score, and another trophy for lowest net
-score.<span style='mso-spacerun:yes'>  </span>For simplicity, here we assume
-that all players play in both events (whereas often some players choose to play
-for only one of the two trophies.)</p>
+<p class=MsoNormal>As a more concrete example, consider the 2025 Menâ€™s Club
+Championship.Â  Played over 2 days, this is a 36-hole stroke play event and in
+2025 there were 48 players in the field.Â  Two events are played simultaneously
+â€“ there is a trophy for lowest gross score, and another trophy for lowest net
+score.Â  For simplicity, here we assume that all players play in both events
+(whereas often some players choose to play for only one of the two trophies.)</p>
 
-<p class=MsoNormal>The player’s handicaps ranged from 1 to 34.<span
-style='mso-spacerun:yes'>  </span>But there are two critical things to realize:
-firstly, there are multiple players with the same handicap; and secondly there
-are some handicaps that nobody in the field has.</p>
+<p class=MsoNormal>The playerâ€™s handicaps ranged from 1 to 34.Â  But there are
+two critical things to realize: firstly, there are multiple players with the
+same handicap; and secondly there are some handicaps that nobody in the field
+has.</p>
 
-<h3><span style='font-size:11.0pt;line-height:107%'>The Gross Score Event<o:p></o:p></span></h3>
+<h3><span style='font-size:11.0pt;line-height:107%'>The Gross Score Event</span></h3>
 
 <p class=MsoNormal>The figure below shows the win probabilities for players in
-the <b>gross scoring</b> event.<span style='mso-spacerun:yes'>  </span>Since
-this is a <i>gross</i> event, handicaps do not factor into the result, and hence
-the low handicap players are most likely to win.</p>
+the <b>gross scoring</b> event.Â  Since this is a <i>gross</i> event, handicaps
+do not factor into the result, and hence the low handicap players are most
+likely to win.</p>
 
 <p class=MsoNormal>In the left image, each blue column indicates the win
-probability of that player.<span style='mso-spacerun:yes'>  </span>There are 48
-columns – one for each player. Note that multiple players have the same
-handicap (e.g. two players have a handicap of 4, and seven players have a
-handicap of 11.)<span style='mso-spacerun:yes'>  </span>This image shows the
-win probability of any given player in the field.<span
-style='mso-spacerun:yes'>  </span>This data bares out the assumption that a low
-handicap player is likely to win the gross score event.</p>
+probability of that player.Â  There are 48 columns â€“ one for each player. Note
+that multiple players have the same handicap (e.g. two players have a handicap
+of 4, and seven players have a handicap of 11.)Â  This image shows the win
+probability of any given player in the field.Â  This data bares out the
+assumption that a low handicap player is likely to win the gross score event.</p>
 
 <p class=MsoNormal>In the right image, the win probability of players with the
-same handicap are grouped together.<span style='mso-spacerun:yes'>  </span>The
-x-axis represents the handicaps of the players.<span style='mso-spacerun:yes'> 
-</span>The height of any of the blue bars represents the probability that a
-player with that handicap will win the event.<span style='mso-spacerun:yes'> 
-</span>The number at the top of the bar indicates the number of players with
-that handicap.</p>
+same handicap are grouped together.Â  The x-axis represents the handicaps of the
+players.Â  The height of any of the blue bars represents the probability that a
+player with that handicap will win the event.Â  The number at the top of the bar
+indicates the number of players with that handicap.</p>
 
 <p class=MsoNormal>For instance, there is a single player with a handicap of 1,
-and they have a win probability of approximately 26%.<span
-style='mso-spacerun:yes'>  </span>There are two players with a handicap of 4,
-and they each have a win probability of approximately 15%.<span
-style='mso-spacerun:yes'>  </span>This means that the probability that the
-winning player has a handicap of 4 is approximately 30%.</p>
+and they have a win probability of approximately 26%.Â  There are two players
+with a handicap of 4, and they each have a win probability of approximately 15%.Â 
+This means that the probability that the winning player has a handicap of 4 is
+approximately 30%.</p>
 
 <p class=MsoNormal>Note that the Gross Championship in 2025 was won by one of the
 players with a handicap of 6, who was 6 strokes better over the 36 holes than
-the player with a handicap of 1, who came in second.<span
-style='mso-spacerun:yes'>   </span>(Noting again that for the <i>gross</i>
-scoring event handicap does not factor into the result.<span
-style='mso-spacerun:yes'>  </span>They were simply the best player over the 36
-holes, even though they nominally only had a 5% chance of winning.)</p>
+the player with a handicap of 1, who came in second.Â Â  (Noting again that for
+the <i>gross</i> scoring event handicap does not factor into the result.Â  They
+were simply the best player over the 36 holes, even though they nominally only
+had a 5% chance of winning.)</p>
 
-<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
- 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:none'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
-  height:41.8pt'>
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:41.8pt'>
   <td width=740 valign=top style='width:554.85pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:41.8pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="_x0000_i1028" type="#_x0000_t75" style='width:507pt;height:325.5pt;
-   visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="simulation_analysis_files/image011.png" o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img border=0 width=676 height=434
-  src="simulation_analysis_files/image012.jpg" v:shapes="_x0000_i1028"><![endif]></span></p>
+  line-height:normal'><img border=0 width=676 height=434
+  src="simulation_analysis_files/image006.jpg"></p>
   </td>
   <td width=740 valign=top style='width:554.85pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:41.8pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="_x0000_i1027" type="#_x0000_t75" style='width:512.25pt;height:311.25pt;
-   visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="simulation_analysis_files/image013.png" o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img border=0 width=683 height=415
-  src="simulation_analysis_files/image014.jpg" v:shapes="_x0000_i1027"><![endif]></span></p>
+  line-height:normal'><img border=0 width=683 height=415
+  src="simulation_analysis_files/image007.jpg"></p>
   </td>
  </tr>
 </table>
 
-<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
 
-<h3><span style='font-size:11.0pt;line-height:107%'>The Net Score Event<o:p></o:p></span></h3>
+<h3><span style='font-size:11.0pt;line-height:107%'>The Net Score Event</span></h3>
 
 <p class=MsoNormal>The figure below shows the win probabilities for players in
-the <b>net scoring</b> event.<span style='mso-spacerun:yes'>  </span>Since this
-is a <i>net</i> event, handicaps <i>do</i> factor into the result, and at least
-conceptually, if all players have the correct handicap, then all players have
-the same probability of winning.<span style='mso-spacerun:yes'>  </span></p>
+the <b>net scoring</b> event.Â  Since this is a <i>net</i> event, handicaps <i>do</i>
+factor into the result, and at least conceptually, if all players have the
+correct handicap, then all players have the same probability of winning.Â  </p>
 
 <p class=MsoNormal>In the left image, each blue column indicates the win
-probability of that player.<span style='mso-spacerun:yes'>  </span>There are 48
-columns – one for each player. Again, note that multiple players have the same
-handicap (e.g. two players have a handicap of 4, and seven players have a
-handicap of 11.)<span style='mso-spacerun:yes'>  </span>This image shows the
-win probability of any given player in the field.<span
-style='mso-spacerun:yes'>  </span>This data indicates that the handicapping
-system is not optimal, and that mid to high handicappers are more likely to win
-– albeit their advantage is generally small, and may be within the margin of
-error.<span style='mso-spacerun:yes'>  </span>(As discussed earlier, there are
-very few rounds for both very low, and very high handicappers, so there is less
-certainty about their win probabilities.<span style='mso-spacerun:yes'> 
-</span>It is possible that with more data the win probability of the low
-handicappers would rise, and the win probability of the high handicappers may
-fall.<span style='mso-spacerun:yes'>  </span>This low number of rounds issue is
-most likely the reason why the win probability of the player with a handicap of
-27 is abnormally high.)</p>
+probability of that player.Â  There are 48 columns â€“ one for each player. Again,
+note that multiple players have the same handicap (e.g. two players have a
+handicap of 4, and seven players have a handicap of 11.)Â  This image shows the
+win probability of any given player in the field.Â  This data indicates that the
+handicapping system is not optimal, and that mid to high handicappers are more
+likely to win â€“ albeit their advantage is generally small, and may be within
+the margin of error.Â  (As discussed earlier, there are very few rounds for both
+very low, and very high handicappers, so there is less certainty about their
+win probabilities.Â  It is possible that with more data the win probability of
+the low handicappers would rise, and the win probability of the high
+handicappers may fall.Â  This low number of rounds issue is most likely the
+reason why the win probability of the player with a handicap of 27 is
+abnormally high.)</p>
 
 <p class=MsoNormal>In the right image, the win probability of players with the
-same handicap are grouped together.<span style='mso-spacerun:yes'>  </span>The
-x-axis represents the handicaps of the players.<span style='mso-spacerun:yes'> 
-</span>The height of any of the blue bars represents the probability that a
-player with that handicap will win the event.<span style='mso-spacerun:yes'> 
-</span>The number at the top of the bar indicates the number of players with
-that handicap.</p>
+same handicap are grouped together.Â  The x-axis represents the handicaps of the
+players.Â  The height of any of the blue bars represents the probability that a
+player with that handicap will win the event.Â  The number at the top of the bar
+indicates the number of players with that handicap.</p>
 
 <p class=MsoNormal>For instance, each player who has a handicap of 11 has
-approximately a 1.7% chance of winning.<span style='mso-spacerun:yes'> 
-</span>However, there are 7 players with this handicap, so the probability that
-the winner has a handicap of 11 is approximately 11.5%.<span
-style='mso-spacerun:yes'>  </span>Similarly, there are 6 players with a
-handicap of 15 and they each have approximately a 2.8% of winning.<span
-style='mso-spacerun:yes'>  </span>However, the probability that the winner has
-a handicap of 15 is approximately 17%.</p>
+approximately a 1.7% chance of winning.Â  However, there are 7 players with this
+handicap, so the probability that the winner has a handicap of 11 is
+approximately 11.5%.Â  Similarly, there are 6 players with a handicap of 15 and
+they each have approximately a 2.8% of winning.Â  However, the probability that
+the winner has a handicap of 15 is approximately 17%.</p>
 
-<p class=MsoNormal>There are two things to note about these plots:<span
-style='mso-spacerun:yes'>  </span>firstly, that each player does not have an
-equal probability of winning – this suggests that the players do not have a
-correct handicap; and secondly, there is a high probability that the winner
-comes from one of the mid-handicappers.</p>
+<p class=MsoNormal>There are two things to note about these plots:Â  firstly,
+that each player does not have an equal probability of winning â€“ this suggests
+that the players do not have a correct handicap; and secondly, there is a high
+probability that the winner comes from one of the mid-handicappers.</p>
 
 <p class=MsoNormal>Note that the Net Championship in 2025 was won by one of the
 players with a handicap of 11, who was 2 strokes better over the 36 holes than
 one of the players with a handicap of 6, who came in second.</p>
 
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal>&nbsp;</p>
 
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
- style='border-collapse:collapse;border:none;mso-yfti-tbllook:1184;mso-padding-alt:
- 0cm 5.4pt 0cm 5.4pt;mso-border-insideh:none;mso-border-insidev:none'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
-  height:41.8pt'>
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:41.8pt'>
   <td width=740 valign=top style='width:554.85pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:41.8pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="_x0000_i1026" type="#_x0000_t75" style='width:518.25pt;height:334.5pt;
-   visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="simulation_analysis_files/image015.png" o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img border=0 width=691 height=446
-  src="simulation_analysis_files/image016.jpg" v:shapes="_x0000_i1026"><![endif]></span></p>
+  line-height:normal'><img border=0 width=691 height=446
+  src="simulation_analysis_files/image008.jpg"></p>
   </td>
   <td width=740 valign=top style='width:554.85pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:41.8pt'>
   <p class=MsoNormal align=center style='margin-bottom:0cm;text-align:center;
-  line-height:normal'><span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
-   id="Picture_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:515.25pt;
-   height:313.5pt;visibility:visible;mso-wrap-style:square'>
-   <v:imagedata src="simulation_analysis_files/image017.png" o:title=""/>
-  </v:shape><![endif]--><![if !vml]><img border=0 width=687 height=418
-  src="simulation_analysis_files/image018.jpg" v:shapes="Picture_x0020_1"><![endif]></span></p>
+  line-height:normal'><img border=0 width=687 height=418 id="Picture 1"
+  src="simulation_analysis_files/image009.jpg"></p>
   </td>
  </tr>
 </table>
 
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal>&nbsp;</p>
 
 <h2>Conclusions</h2>
 
@@ -2148,8 +506,7 @@ one of the players with a handicap of 6, who came in second.</p>
 understanding of who is more likely to win events when different scoring
 formats are used. Specifically, low handicappers have a considerable advantage
 in <i>gross</i> events, where as high handicappers have an advantage in <i>net</i>
-events.<span style='mso-spacerun:yes'>  </span>This holds for both stroke play
-and match play events.</p>
+events.Â  This holds for both stroke play and match play events.</p>
 
 <p class=MsoNormal>However, as noted in the Methodology section, there are very
 few rounds for low handicap players (or for high handicap players,) and hence
@@ -2167,7 +524,7 @@ are perhaps unfairly advantaged in match play events. However, the data shows
 that they need to be 12-18 handicap strokes higher than their opponent before
 seeing a perceptible advantage.</p>
 
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+<p class=MsoNormal>&nbsp;</p>
 
 </div>
 
